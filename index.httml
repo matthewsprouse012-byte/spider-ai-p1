@@ -1,1 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SPIDER-AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <div class="hud">
+
+    <!-- Camera -->
+    <video id="camera" autoplay playsinline muted></video>
+
+    <!-- Dark overlay -->
+    <div class="overlay"></div>
+
+    <!-- Top information -->
+    <header>
+      <div class="title">SPIDER-AI</div>
+      <div class="system">
+        ● SYSTEM ONLINE
+      </div>
+    </header>
+
+    <!-- Center HUD -->
+    <div class="target">
+
+      <div class="corner top-left"></div>
+      <div class="corner top-right"></div>
+      <div class="corner bottom-left"></div>
+      <div class="corner bottom-right"></div>
+
+      <div class="crosshair">+</div>
+
+      <div class="target-text">
+        CAMERA READY
+      </div>
+
+    </div>
+
+    <!-- Information panels -->
+    <div class="information">
+
+      <div class="panel">
+        <span>DISTANCE</span>
+        <strong id="distance">--</strong>
+        <small>meters</small>
+      </div>
+
+      <div class="panel">
+        <span>AI VISION</span>
+        <strong id="vision">STANDBY</strong>
+      </div>
+
+      <div class="panel">
+        <span>BATTERY</span>
+        <strong id="battery">--%</strong>
+      </div>
+
+    </div>
+
+    <!-- Camera button -->
+    <button id="cameraButton">
+      ENABLE CAMERA
+    </button>
+
+    <!-- Bottom status -->
+    <footer>
+      <span>CAM: <b id="cameraStatus">OFF</b></span>
+      <span>AI: <b>STANDBY</b></span>
+      <span>DEPTH: <b>NOT CONNECTED</b></span>
+    </footer>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
